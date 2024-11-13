@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA - Página Oficial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fuente básica y color de fondo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilo para el contenedor general */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Estilo para el encabezado */
+header {
+    background-color: #002F6C;
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para las secciones */
+section {
+    padding: 40px 0;
+    background-color: white;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #002F6C;
+}
+
+section p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 1rem;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+/* Estilo para el formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+    font-size: 1rem;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #002F6C;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #004C8C;
+}
+
+/* Estilo para el pie de página */
+footer {
+    background-color: #002F6C;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+<body>
+    <header>
+        <div class="container">
+            <h1>NBA - National Basketball Association</h1>
+            <nav>
+                <ul>
+                    <li><a href="#equipos">Equipos</a></li>
+                    <li><a href="#noticias">Noticias</a></li>
+                    <li><a href="#jugadores">Jugadores</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="equipos">
+        <div class="container">
+            <h2>Equipos de la NBA</h2>
+            <p>Conoce todos los equipos que participan en la NBA:</p>
+            <ul>
+                <li>Los Angeles Lakers</li>
+                <li>Miami Heat</li>
+                <li>Golden State Warriors</li>
+                <li>Chicago Bulls</li>
+                <li>Boston Celtics</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="noticias">
+        <div class="container">
+            <h2>Últimas Noticias</h2>
+            <p>Entérate de lo más reciente en el mundo del baloncesto:</p>
+            <article>
+                <h3>Lebron James rompe otro récord</h3>
+                <p>El legendario LeBron James alcanzó otro hito histórico en su carrera...</p>
+            </article>
+            <article>
+                <h3>Finales de la NBA: Warriors vs Celtics</h3>
+                <p>Las Finales de la NBA están al rojo vivo entre los Warriors y los Celtics...</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="jugadores">
+        <div class="container">
+            <h2>Jugadores Estrella</h2>
+            <p>Algunos de los jugadores más destacados de la NBA:</p>
+            <ul>
+                <li>Stephen Curry</li>
+                <li>Kevin Durant</li>
+                <li>Giannis Antetokounmpo</li>
+                <li>James Harden</li>
+                <li>Kawhi Leonard</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>Para más información, contáctanos:</p>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 NBA. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
